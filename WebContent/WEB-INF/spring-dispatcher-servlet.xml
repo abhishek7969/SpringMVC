@@ -6,12 +6,12 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context-3.0.xsd">  
 
-	<!--Required for the plane old based approach  
+	<!--Required for the plane old based approach  -->
 	<bean id="HandlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
     <bean name="/welcome.html" class="com.abhi.hellocontroller.HelloController" />
-	-->
-	<!--Required for the annotation based approach  -->
-	<context:component-scan base-package="com.abhi.hellocontroller" />
+	
+	<!--Required for the annotation based approach   -->
+	<!-- <context:component-scan base-package="com.abhi.hellocontroller" /> -->
 	
     <bean id="viewResolver"
     	class="org.springframework.web.servlet.view.InternalResourceViewResolver" >

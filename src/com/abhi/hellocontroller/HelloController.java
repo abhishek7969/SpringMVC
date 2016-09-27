@@ -1,4 +1,4 @@
-/*package com.abhi.hellocontroller;
+package com.abhi.hellocontroller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,4 +14,4 @@ public class HelloController extends AbstractController {
 		modelAndView.addObject("welcomeMessage", "Hi User Welcome to Spring MVC tutorial");
 		return modelAndView;
 	}
-}*/
+}
