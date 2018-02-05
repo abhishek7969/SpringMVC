@@ -1,10 +1,10 @@
 package com.abhi.school;
 
-import org.hibernate.validator.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 public class Address {
 	
-	@NotEmpty
+	@Size(min=3,max=30)
 	private String country;
 	
 	private String city;

@@ -19,14 +19,14 @@ public class HelloControllerNew {
 		return modelAndView;
 	}
 	
-//	@RequestMapping("/welcome/{userName}/{countryName}")
+	@RequestMapping("/welcome1/{userName}/{countryName}")
 	public ModelAndView hiMsg(@PathVariable("countryName") String country,  @PathVariable("userName") String username){
 		ModelAndView modelAndView = new ModelAndView("HelloPage");
 		modelAndView.addObject("welcomeMessage", "Welcome "+ username + " from "+country);
 		return modelAndView;
 	}
 	
-//	@RequestMapping("/welcome/{userName}/{countryName}")
+	@RequestMapping("/welcome/{userName}/{countryName}")
 	public ModelAndView hiNewMsg(@PathVariable Map<String,String> pathvars){ //  to use this map of path variable u need to use <mvc:annotation-drivers/>
 		String  username = pathvars.get("userName");
 		String  country = pathvars.get("countryName");
